@@ -1,36 +1,15 @@
-# datomic-scratchpad
+* datomic-scratchpad
 
-FIXME: description
+This is a place for me to play with datomic and learn me a datalog for great good :)
 
-## Installation
+** Usage
+1. Install [[https://cognitect.com/dev-tools][Cognitect dev-tools]].
+2. Run REPL and import =datomic-scratchpad.core= namespace (for mount to start)
+3. ???
+4. Profit
 
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar datomic-scratchpad-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2020 FIXME
+** License
+Copyright © 2020 Malik Kennedy <mksybr@gmail.com>
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
