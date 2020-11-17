@@ -20,13 +20,15 @@ Table of Contents
 ─────────
 
   1. Install [Cognitect dev-tools].
-  2. Run REPL and import `datomic-scratchpad.core' namespace (for mount
-     to start)
+  2. Run REPL and import `datomic-scratchpad.core' namespace (for
+     [mount] to start)
   3. ???
   4. Profit
 
 
 [Cognitect dev-tools] <https://cognitect.com/dev-tools>
+
+[mount] <https://github.com/tolitius/mount>
 
 
 1.2 License

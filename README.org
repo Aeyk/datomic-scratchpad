@@ -4,7 +4,7 @@ This is a place for me to play with datomic and learn me a datalog for great goo
 
 ** Usage
 1. Install [[https://cognitect.com/dev-tools][Cognitect dev-tools]].
-2. Run REPL and import =datomic-scratchpad.core= namespace (for mount to start)
+2. Run REPL and import =datomic-scratchpad.core= namespace (for [[https://github.com/tolitius/mount][mount]] to start)
 3. ???
 4. Profit
 
