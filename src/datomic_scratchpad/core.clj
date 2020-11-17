@@ -8,8 +8,14 @@
 
 (def db (d/db conn))
 
-
 ;; Get titles
 (d/q '[:find ?title
        :where [_ :movie/title ?title]]
+     db)
+
+;; Get entries from 1984
+(d/q '[:find ?movie ?title
+       :where
+       [?movie :movie/release-year 1984]
+       [?movie :movie/title ?title]]
      db)
