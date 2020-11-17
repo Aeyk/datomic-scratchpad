@@ -5,7 +5,8 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [com.datomic/client-cloud "0.8.102"]
-                 [com.datomic/dev-local "0.9.225"]]
+                 [com.datomic/dev-local "0.9.225"]
+                 [mount "0.1.16"]]
   :main ^:skip-aot datomic-scratchpad.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
