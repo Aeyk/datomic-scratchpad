@@ -3,7 +3,7 @@
             [datomic.client.api :as d]
             [mount.core :as mount]))
 
-(def db-name "movies") ;; todo maybe put this in (env :config) thing
+(def *db-name* "movies") ;; todo maybe put this in (env :config) thing
 
 (mount/defstate *datomic*
   :start
@@ -12,7 +12,7 @@
       (d/client
        {:server-type :dev-local
         :system "datomic-samples"}))
-    (def conn (d/connect client {:db-name db-name}))
+    (def conn (d/connect client {:db-name *db-name*}))
     (def *datomic-db* (d/db conn)) *datomic-db*)
   :stop
   (fn [conn]
@@ -30,10 +30,18 @@
        :where
        [?movie :movie/release-year 1984]
        [?movie :movie/title ?title]]
-     db)
+     *datomic-db*)
 
 
 (d/q '[:find ?name
        :where
        [?person :person/name ?name]]
-     db)
+     *datomic-db*)
+
+(d/q '[:find ?movie ?title ?genre ?year
+       :where
+       [?movie :movie/title ?title]
+       [?movie :movie/genre ?genre]
+       [?movie :movie/release-year ?year]]
+     *datomic-db*)
+
